@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Movie Details</title>
+</head>
+<body>
+	<h1>Movie Details</h1>
+	<ul>
+	
+<%= detailList.Genre %>
+<img src="<%= detailList.Poster %>">
+	</ul>
+	<form action ="/favorites">
+		<input type ="submit" value="add to favorites">
+		<input type ="hidden" value ="<% detailList.Title %>" name="id">
+		<input type ="hidden" value ="<% detailList.Title %>" name="id">
+	</form>
+</body>
+</html>
